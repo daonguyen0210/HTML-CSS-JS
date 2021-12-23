@@ -1,0 +1,151 @@
+/* ============== GOOGLE FONT ============== */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,300&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+:root {
+     
+    /* =============== Z INDEX =============== */
+    --z-ind-normal: 2;
+    --z-ind-lv1: 4;
+    --z-ind-lv2: 6;
+    --z-ind-lv3: 8;
+}
+
+#container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./bed.jpeg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#container::after{
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 36%;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate( -50%, -50%);
+    background-color: rgba(196, 189, 157, .5);
+    /* z-index: var(--z-ind-normal); */
+    z-index: 0;
+    box-shadow: 5px 5px 10px rgba( 226, 226, 226, .7);
+}
+
+
+#container > *{
+    z-index: var(--z-ind-lv1);
+    margin: 2rem;
+}
+
+.modal__logo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(100, 52, 6, 0.8);
+}
+
+.modal__content {
+    width: 80%;
+    text-align: center;
+    font-size: .85rem;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(100, 52, 6, 0.6);
+}
+
+.modal__open {
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .75rem;
+}
+
+
+.modal__open button {
+    padding: 5px;
+    border-radius: 5px 7px;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(142, 144, 67, .9);
+    color: rgb(222, 175, 105);
+    transition: .3s ease;
+}
+
+.modal__open button:hover{
+    color: rgba(100, 52, 6, 0.6);
+    background-color: rgba(196, 189, 157, .5);
+    font-weight: 400;
+    transform: scale(1.05);
+}
+
+.modal__burger {
+    column-gap: 3px;
+    position: absolute;
+    top: 29%;
+    left: 67%;
+    width: 20px;
+    cursor: pointer;
+}
+
+.modal__burger:hover{
+    animation: rotateClose .5s ease forwards;
+}
+
+
+.modal__burger div{
+    width: 20px;
+    height: 3px;
+    margin: 2px;
+    background-color: rgb(177, 182, 31);
+}
+
+
+.toggle .line1{
+    transform: rotate( -45deg) translate( -1px, 2px);
+}
+
+.toggle .line2{
+    transform: rotate( 45deg) translate( -2px, -2px);
+}
+
+
+@keyframes rotateClose {
+    from {
+        transform: rotate( 0deg);
+    }
+    to{
+        transform: rotate( 360deg);
+    }
+}
+
+.dispear {
+    display: none;
+}
+
+.show__content {
+    width: 60%;
+    font-size: 1.1rem;
+}

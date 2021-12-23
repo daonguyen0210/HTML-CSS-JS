@@ -1,0 +1,232 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Nunito', sans-serif; */
+
+body {
+  min-height: 100vh;
+  background: #150019;
+  font-family: "Nunito", sans-serif;
+}
+
+.navigation {
+  position: fixed;
+  width: 60px;
+  height: 100%;
+  background: #3e0748;
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+
+.navigation:hover,
+.navigation.active {
+  width: 250px;
+}
+
+
+.navigation ul {
+    position: absolute;
+    top: 5%;
+    height: 0;
+    width: 100%;
+}
+
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+.navigation ul li:hover {
+    background: rgb(252, 78, 113);
+    color: white;
+}
+
+
+.navigation ul li a {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li .icon {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+.navigation ul li a .fa {
+    width: 100%;
+    height: 100%;
+    font-size: 24px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    padding: 0 10px ;
+    min-width: 60px;
+    height: 60px;
+    font-size: 1.15rem;
+    white-space: nowrap;
+    text-align: start;
+    line-height: 60px;
+    align-self: center;
+}
+
+
+.toggle {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #330748;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: #ea1d63;
+}
+
+.toggle:before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.toggle.active::before {
+    content: '\f00d';
+
+
+}
+
+
+@media screen and ( max-width: 767px){
+    .navigation{
+        left: -60px;
+    }
+
+    .navigation.active {
+        left: 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

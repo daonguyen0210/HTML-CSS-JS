@@ -1,0 +1,86 @@
+/*  =================== LINK GOOGLE FONT =================== */
+@import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');   
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    font-family: 'Georama', sans-serif;
+    background-color: rgba(2, 74, 122, 0.747);
+}
+
+
+#counter-name {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    /* border-bottom: 2px solid rgb(164, 164, 173); */
+    box-shadow: inset 0px 0px 16px hsla( 240, 34%, 80%),
+                0px 0px 16px hsla( 240, 34%, 80%)   ;
+
+}
+
+#counter-number {
+    font-size: 3rem;
+    color: rgb(6, 226, 226);
+    box-shadow: 5px 5px 7px hsla( 240, 34%, 80%);
+}
+
+#counter-btn {
+    display: flex;
+    column-gap: 2.5rem;
+}
+
+.btn {
+    padding: 7px 10px;
+    font-family: 'Georama', sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+    outline: none;
+
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s ease;
+    border: 2px solid transparent;
+}
+
+.btn:hover{
+    box-shadow: 6px 6px 16px hsla( 240, 34%, 80%, 1),
+                inset -6px -6px  16px hsla( 240, 34%, 80%);
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
